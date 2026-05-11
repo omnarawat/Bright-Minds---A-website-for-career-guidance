@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f1111;
+    color: white;
+  }
+  
+  .about-us {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
+    margin: 10px 0;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .contact-info a {
+    color: #00aaff;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin: 0 15px; /* beech mein gap */
+    font-size: 30px; /* size of icons */
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.3); /* hover pe bada ho jayega */
+    color: #0077b5; /* hover color change */
+  }
+  
+  
+  .footer-text {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .footer-text p {
+    margin: 5px 0;
+  }
+
+
+  

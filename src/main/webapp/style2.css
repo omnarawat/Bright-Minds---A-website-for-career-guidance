@@ -1,0 +1,463 @@
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background: #e6f0ff;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #003366;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+.back-btn a {
+    padding: 10px 20px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn a:hover {
+    background: #00509e;
+}
+
+.card-box {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background: #f0f8ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background: #dbefff;
+}
+
+.card-title {
+    transition: color 0.3s ease;
+    color:red;
+    font-family: cursive;
+    font-size:1.4rem;
+}
+.card-text{
+    color: #007bff;
+    /* font-family:"poppins",sans-serif; */
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:1rem;
+   
+    /* align-items:center; */
+
+
+}
+
+.card:hover .card-title {
+    color:green;
+}
+
+.card:hover .card-text {
+    color: orangered; /* Change color to yellow on hover */
+}
+
+
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    height: 200px; /* You can set this to any desired height */
+    width: 100%; /* Makes the image fill the card width */
+}
+
+.btn.btn-primary {
+   
+    color:#fff047;
+
+    background-color:orange;
+
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: gainsboro; /* Darker red on hover */
+    transform: scale(1.05);    /* Slight grow on hover */
+    color: blue;            /* Optional: yellow text on hover */
+}
+
+.engineering-detail-btn {
+    display: inline-block;
+}
+
+.engineering-info-panel {
+    background: linear-gradient(180deg, #ffffff, #f8fbff);
+    border: 1px solid #bcd7ff;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 51, 102, 0.14);
+    padding: 24px;
+    text-align: left;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.engineering-info-panel.active {
+    box-shadow: 0 18px 36px rgba(0, 51, 102, 0.2);
+    transform: translateY(-2px);
+}
+
+.engineering-info-panel span {
+    color: #0f766e;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.engineering-info-panel h3 {
+    color: #003366;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.engineering-info-panel p {
+    color: #3f4f63;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.engineering-info-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.engineering-info-grid div {
+    background: #f0f8ff;
+    border: 1px solid #dbefff;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.engineering-info-grid h4 {
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.engineering-info-grid ul {
+    margin-left: 18px;
+}
+
+.engineering-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.engineering-tab {
+    background: #e6f0ff;
+    border: 1px solid #bcd7ff;
+    border-radius: 8px;
+    color: #003366;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 10px 14px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.engineering-tab:hover,
+.engineering-tab.active {
+    background: #007bff;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.engineering-tab-panel {
+    display: none;
+}
+
+.engineering-tab-panel.active {
+    display: block;
+}
+
+.engineering-meter {
+    margin-bottom: 14px;
+}
+
+.engineering-meter header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.engineering-meter strong {
+    color: #003366;
+}
+
+.engineering-meter small {
+    color: #0f766e;
+    font-weight: 800;
+}
+
+.meter-track {
+    background: #dbefff;
+    border-radius: 999px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.meter-track span {
+    background: linear-gradient(90deg, #007bff, #0f766e);
+    display: block;
+    height: 100%;
+    width: 0;
+}
+
+.engineering-checklist {
+    display: grid;
+    gap: 10px;
+}
+
+.engineering-checklist label {
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #dbefff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+}
+
+.engineering-checklist label:has(input:checked) {
+    background: #eff6ff;
+    border-color: #007bff;
+    color: #003366;
+    font-weight: 800;
+}
+
+.engineering-action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.engineering-action-row a,
+.engineering-action-row button {
+    background: #003366;
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.engineering-action-row a:hover,
+.engineering-action-row button:hover {
+    background: #0f766e;
+}
+
+
+#typewriter::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+  header {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  
+  #typewriter {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, violet, #ffe2c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    animation: flicker 2.5s infinite;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+ 
+
+   /* Navbar */
+  .navbar {
+    width: 100%;
+    background-color: #002b45;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #00bcd4;
+    
+
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #00bcd4;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-box input {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-box button {
+    background-color: #00bcd4;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #0192a5;
+  }
+  
+
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin: 0 15px; /* beech mein gap */
+    font-size: 30px; /* size of icons */
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.3); /* hover pe bada ho jayega */
+    color: #0077b5; /* hover color change */
+  }
+  
+
+
+
+.logo img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.heading{
+  text-align:center;
+  padding:2.5rem 0;
+}
+.heading span{
+  --orange: #ffa500;
+  font-size:3.5rem;
+  background:rgba(255,165,0,.2);
+  color:var(--orange);
+  border-radius:.5rem;
+  padding:2rem 1rem;
+  /* display:inline-block; */
+  
+}
+.heading span.space{
+  background:none;
+}

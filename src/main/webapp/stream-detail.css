@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eef6ff;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.stream-hero {
+  background: linear-gradient(135deg, #082f49, #0f766e);
+  color: #ffffff;
+  padding: 64px 20px 42px;
+  text-align: center;
+}
+
+.stream-hero span {
+  color: #facc15;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stream-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin: 0 0 14px;
+}
+
+.stream-hero p {
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.stream-shell {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 24px 16px 42px;
+}
+
+.quick-grid,
+.path-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.quick-card,
+.path-card,
+.detail-panel,
+.planner {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  padding: 20px;
+}
+
+.quick-card strong {
+  color: #0f766e;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.path-card {
+  cursor: pointer;
+  min-height: 150px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.path-card:hover,
+.path-card.active {
+  border-color: #2563eb;
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.16);
+  transform: translateY(-4px);
+}
+
+.path-card h3 {
+  color: #1d4ed8;
+  margin: 0 0 10px;
+}
+
+.section-title {
+  color: #172554;
+  margin: 30px 0 14px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 26px 0 16px;
+}
+
+.tab-btn,
+.action-link {
+  background: #2563eb;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 11px 16px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active,
+.action-link:hover {
+  background: #0f766e;
+  transform: translateY(-1px);
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.detail-panel h2 {
+  color: #172554;
+  margin-top: 0;
+}
+
+.detail-panel li,
+.planner li {
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.planner {
+  margin-top: 22px;
+}
+
+.planner label {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.back-row {
+  margin-top: 26px;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .stream-hero {
+    padding-top: 42px;
+  }
+
+  .tab-btn,
+  .action-link {
+    width: 100%;
+  }
+}
